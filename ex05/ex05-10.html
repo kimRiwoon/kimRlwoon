@@ -26,15 +26,17 @@
       let list = "";
       list += `     <table>`;
       list += `   <tr>`;
-      list += `     <th>식</th>`;
-      list += `     <th>답</th>`;
       list += `   </tr>`;
+      for (let j = 2; j <= 9; j++) {
+        list += `     <th>식</th>`;
+        list += `     <th>답</th>`;
 
-      for (let i = 1; i <= 9; i++) {
-        list += `   <tr>`;
-        list += `     <td>2 X ${i} =</td>`;
-        list += `     <td>${2 * i}</td>`;
-        list += `   </tr>`;
+        for (let i = 1; i <= 9; i++) {
+          list += `   <tr>`;
+          list += `     <td> ${j} X ${i} =</td>`;
+          list += `     <td>${j * i}</td>`;
+          list += `   </tr>`;
+        }
       }
 
       list += ` </table>`;
